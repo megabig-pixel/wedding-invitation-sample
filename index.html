@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楽々ウェディング招待状 - Wedding Invitation</title>
+  <meta name="description" content="私たちの結婚式にご招待いたします。大切な皆さまと幸せな一日を過ごせますように。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- オープニングオーバーレイ -->
+  <div id="opening-overlay" class="opening-overlay">
+    <div class="opening-content">
+      <div class="opening-ornament top-ornament">✦</div>
+      <p class="opening-subtitle">Wedding Invitation</p>
+      <h1 class="opening-names">Haruto & Sakura</h1>
+      <p class="opening-date">2026.10.10 Sat</p>
+      <div class="opening-ornament bottom-ornament">✦</div>
+      <button id="open-invitation-btn" class="open-btn">
+        <span>招待状を開く</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ナビゲーション -->
+  <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">H & S</a>
+      <ul class="nav-links">
+        <li><a href="#greeting">ご挨拶</a></li>
+        <li><a href="#details">挙式詳細</a></li>
+        <li><a href="#timeline">当日の流れ</a></li>
+        <li><a href="#gallery">ギャラリー</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#rsvp" class="nav-rsvp-btn">出欠回答</a></li>
+      </ul>
+      <button id="nav-toggle" class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- モバイルメニュー -->
+  <div id="mobile-menu" class="mobile-menu">
+    <ul class="mobile-nav-links">
+      <li><a href="#greeting">ご挨拶</a></li>
+      <li><a href="#details">挙式詳細</a></li>
+      <li><a href="#timeline">当日の流れ</a></li>
+      <li><a href="#gallery">ギャラリー</a></li>
+      <li><a href="#access">アクセス</a></li>
+      <li><a href="#rsvp">出欠回答</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- ===== ヒーローセクション ===== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-particles" id="hero-particles"></div>
+      <div class="hero-content">
+        <p class="hero-pretext animate-on-scroll">We're Getting Married</p>
+        <div class="hero-names-wrapper animate-on-scroll">
+          <span class="hero-name">Haruto</span>
+          <span class="hero-ampersand">&</span>
+          <span class="hero-name">Sakura</span>
+        </div>
+        <div class="hero-divider animate-on-scroll">
+          <span class="divider-line"></span>
+          <span class="divider-icon">♥</span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="hero-date animate-on-scroll">2026年10月10日（土）</p>
+        <div class="hero-countdown animate-on-scroll" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-days">---</span>
+            <span class="countdown-label">DAYS</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-hours">--</span>
+            <span class="countdown-label">HOURS</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-minutes">--</span>
+            <span class="countdown-label">MIN</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-seconds">--</span>
+            <span class="countdown-label">SEC</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ===== 挨拶文セクション ===== -->
+    <section id="greeting" class="section greeting-section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <p class="section-subtitle">Greeting</p>
+          <h2 class="section-title">ご挨拶</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✦</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        <div class="greeting-content animate-on-scroll">
+          <p>
+            謹啓　時下ますますご清祥のこととお慶び申し上げます
+          </p>
+          <p>
+            このたび　私たちは結婚式を挙げることとなりました
+          </p>
+          <p>
+            つきましては　日頃お世話になっている皆さまに<br>
+            感謝の気持ちを込めて<br>
+            ささやかな小宴を催したく存じます
+          </p>
+          <p>
+            ご多用中　誠に恐縮ではございますが<br>
+            ぜひご出席いただきたく　ご案内申し上げます
+          </p>
+          <div class="greeting-signature">
+            <p>敬白</p>
+            <p class="signature-date">2026年 春</p>
+            <div class="signature-names">
+              <span>山田 陽翔</span>
+              <span>佐藤 さくら</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floral-accent floral-accent-left"></div>
+      <div class="floral-accent floral-accent-right"></div>
+    </section>
+
+    <!-- ===== 挙式詳細セクション ===== -->
+    <section id="details" class="section details-section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <p class="section-subtitle">Wedding Details</p>
+          <h2 class="section-title">挙式のご案内</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✦</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        <div class="details-cards">
+          <div class="detail-card animate-on-scroll">
+            <div class="detail-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <h3 class="detail-label">日時</h3>
+            <p class="detail-value">2026年10月10日（土）</p>
+            <p class="detail-sub">挙式　午前11時00分<br>披露宴　正午12時00分</p>
+          </div>
+          <div class="detail-card animate-on-scroll" style="animation-delay: 0.15s">
+            <div class="detail-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="detail-label">会場</h3>
+            <p class="detail-value">ガーデンテラス東京</p>
+            <p class="detail-sub">〒100-0001<br>東京都千代田区丸の内1-1-1</p>
+          </div>
+          <div class="detail-card animate-on-scroll" style="animation-delay: 0.3s">
+            <div class="detail-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="detail-label">受付</h3>
+            <p class="detail-value">午前10時30分</p>
+            <p class="detail-sub">お時間に余裕をもって<br>お越しくださいませ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== タイムライン ===== -->
+    <section id="timeline" class="section timeline-section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <p class="section-subtitle">Timeline</p>
+          <h2 class="section-title">当日の流れ</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✦</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">10:30</div>
+            <div class="timeline-content">
+              <h3>受付開始</h3>
+              <p>ロビーにてお待ちしております</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">11:00</div>
+            <div class="timeline-content">
+              <h3>挙式</h3>
+              <p>チャペルにて挙式を執り行います</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">12:00</div>
+            <div class="timeline-content">
+              <h3>披露宴</h3>
+              <p>お食事とともに楽しいひとときを</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">14:30</div>
+            <div class="timeline-content">
+              <h3>デザートビュッフェ</h3>
+              <p>特製スイーツをお楽しみください</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">15:30</div>
+            <div class="timeline-content">
+              <h3>お開き</h3>
+              <p>ゲストの皆さまをお見送りいたします</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ギャラリー ===== -->
+    <section id="gallery" class="section gallery-section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <p class="section-subtitle">Gallery</p>
+          <h2 class="section-title">フォトギャラリー</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✦</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        <div class="gallery-grid animate-on-scroll" id="gallery-grid">
+          <div class="gallery-item gallery-item-large" data-caption="二人の出会い">
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>Photo 01</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-caption="プロポーズの日">
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>Photo 02</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-caption="前撮り">
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>Photo 03</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-caption="二人の思い出">
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>Photo 04</span>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item-wide" data-caption="大切な日々">
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>Photo 05</span>
+            </div>
+          </div>
+        </div>
+        <p class="gallery-note animate-on-scroll">※ お写真は後日差し替え可能です</p>
+      </div>
+    </section>
+
+    <!-- ===== アクセス情報 ===== -->
+    <section id="access" class="section access-section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <p class="section-subtitle">Access</p>
+          <h2 class="section-title">アクセス</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✦</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        <div class="access-content">
+          <div class="access-map animate-on-scroll">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030555905!2d139.7671248!3d35.6812362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1234567890"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="会場地図">
+            </iframe>
+          </div>
+          <div class="access-info animate-on-scroll">
+            <div class="access-venue">
+              <h3>ガーデンテラス東京</h3>
+              <p>〒100-0001 東京都千代田区丸の内1-1-1</p>
+            </div>
+            <div class="access-transport">
+              <div class="transport-item">
+                <div class="transport-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>電車でお越しの場合</h4>
+                  <p>JR「東京駅」丸の内南口より徒歩5分</p>
+                  <p>東京メトロ「大手町駅」B1出口より徒歩3分</p>
+                </div>
+              </div>
+              <div class="transport-item">
+                <div class="transport-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>お車でお越しの場合</h4>
+                  <p>会場専用駐車場をご利用ください（50台収容）</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RSVP（出欠回答） ===== -->
+    <section id="rsvp" class="section rsvp-section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <p class="section-subtitle">RSVP</p>
+          <h2 class="section-title">出欠のご回答</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✦</span>
+            <span class="divider-line"></span>
+          </div>
+          <p class="rsvp-deadline animate-on-scroll">ご回答期限：2026年9月10日（木）</p>
+        </div>
+        <form id="rsvp-form" class="rsvp-form animate-on-scroll" novalidate>
+          <div class="form-group">
+            <label for="guest-name" class="form-label">お名前 <span class="required">*</span></label>
+            <input type="text" id="guest-name" name="name" class="form-input" placeholder="山田 太郎" required>
+            <span class="form-error" id="name-error">お名前をご入力ください</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">ご出席 <span class="required">*</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="attendance" value="attend" required>
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                  <span class="radio-main">出席いたします</span>
+                  <span class="radio-sub">喜んで出席させていただきます</span>
+                </span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attendance" value="decline">
+                <span class="radio-custom"></span>
+                <span class="radio-text">
+                  <span class="radio-main">残念ながら欠席いたします</span>
+                  <span class="radio-sub">申し訳ございませんが出席できません</span>
+                </span>
+              </label>
+            </div>
+            <span class="form-error" id="attendance-error">ご出席をお選びください</span>
+          </div>
+
+          <div class="form-group" id="companion-group">
+            <label for="companions" class="form-label">ご同伴人数</label>
+            <select id="companions" name="companions" class="form-select">
+              <option value="0">なし（おひとりで出席）</option>
+              <option value="1">1名</option>
+              <option value="2">2名</option>
+              <option value="3">3名</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="allergy" class="form-label">アレルギー・食事制限</label>
+            <input type="text" id="allergy" name="allergy" class="form-input" placeholder="例：甲殻類アレルギー">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">お二人へのメッセージ</label>
+            <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="ご自由にメッセージをお書きください"></textarea>
+          </div>
+
+          <button type="submit" id="rsvp-submit" class="rsvp-submit-btn">
+            <span class="btn-text">回答を送信する</span>
+            <span class="btn-loading">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke-dasharray="56" stroke-dashoffset="14"/>
+              </svg>
+            </span>
+          </button>
+        </form>
+
+        <!-- 送信完了メッセージ -->
+        <div id="rsvp-success" class="rsvp-success" style="display:none;">
+          <div class="success-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>ご回答ありがとうございます</h3>
+          <p>お返事を承りました。<br>当日お会いできることを楽しみにしております。</p>
+        </div>
+      </div>
+      <div class="floral-accent floral-accent-left"></div>
+      <div class="floral-accent floral-accent-right"></div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-ornament">✦</div>
+      <p class="footer-names">Haruto & Sakura</p>
+      <p class="footer-date">2026.10.10</p>
+      <p class="footer-message">Thank you for being part of our special day</p>
+      <div class="footer-ornament">✦</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
